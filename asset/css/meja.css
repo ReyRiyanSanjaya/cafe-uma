@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-attachment: fixed;
+    background-image: url('../gambar/kantin1.jpeg');
+    position: relative;
+}
+
+
+/* ============== awal css dari card meja ============ */
+
+a.btn {
+    background: #ef4478;
+    border-radius: 4px;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 1% 3% 1% 3%;
+    position: relative;
+    text-decoration: none;
+    transition: all 1s ease-out;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.no-touch a.btn:hover {
+    background: #00a2ad;
+    transform: translateY(-2px);
+    transition: all 1s ease-out;
+}
+
+.no-touch a.btn:active,
+a.btn:active {
+    background: #00a2ad;
+    transform: translat3d(0, 7px, 0);
+    transition: all 0.25s 0s ease-out;
+}
+
+div.mejas {
+    margin: 5% 0% 2% 0%;
+    max-width: 100%;
+    text-align: center;
+    border-radius: 32%;
+}
+
+div.meja {
+    background: rgba(68, 48, 48, 0.9);
+    display: inline-block;
+    margin: 8px;
+    margin: 1%;
+    max-width: 260px;
+    perspective: 1000;
+    position: relative;
+    text-align: left;
+    transition: all 0.7s 0s ease-in-out;
+    z-index: 1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 1px 2px 50px 0px rgba(102, 98, 98, 0.6);
+    cursor: pointer;
+}
+
+div.meja:hover {
+    transform: scale(1.1);
+}
+
+div.meja img {
+    max-width: 260px;
+    border-radius: 50%;
+}
+
+div.meja div.judul-meja {
+    background: rgb(95, 91, 53, 0.5);
+    padding: 7px 15px 10px;
+    position: relative;
+    z-index: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.meja div.judul-meja a.toggle-info.btn {
+    border-radius: 32px;
+    height: 32px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 30px;
+}
+
+div.meja div.judul-meja a.toggle-info.btn span {
+    background: lightblue;
+    display: block;
+    height: 4px;
+    position: absolute;
+    top: 17px;
+    transition: all 0.15s 0s ease-out;
+    width: 19px;
+}
+
+div.meja div.judul-meja a.toggle-info span.left {
+    right: 14px;
+    transform: rotate(45deg);
+}
+
+div.meja div.judul-meja a.toggle-info span.right {
+    left: 14px;
+    transform: rotate(-45deg);
+}
+
+div.meja div.judul-meja h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    margin: 0;
+    padding: 0;
+}
+
+div.meja div.judul-meja h2 small {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+}
+
+div.meja div.meja-deskripsi {
+    padding: 0 15px 10px;
+    position: relative;
+    font-size: 14px;
+}
+
+div.meja-aksi {
+    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+    padding: 10px 15px 20px;
+    text-align: center;
+}
+
+div.meja div.meja-animasi {
+    background: #d9d9d9;
+    position: absolute;
+    width: 100%;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+}
+
+div.card div.animasi1 {
+    transition: all 0.3s 0.3s ease-out;
+    z-index: -1;
+}
+
+div.card div.animasi2 {
+    transition: all 0.3s 0s ease-out;
+    z-index: -2;
+}
+
+div.mejas.tampilkan div.meja {
+    cursor: pointer;
+    opacity: 0.6;
+    transform: scale(0.88);
+}
+
+.no-touch div.mejas.tampilkan div.meja:hover {
+    opacity: 0.94;
+    transform: scale(0.92);
+}
+
+div.meja.tampil {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+div.meja.tampil div.judul-meja a.toggle-info {
+    background: #ff6666 !important;
+}
+
+div.meja.tampil div.judul-meja a.toggle-info span {
+    top: 15px;
+}
+
+div.meja.tampil div.judul-meja a.toggle-info span.left {
+    right: 10px;
+}
+
+div.meja.tampil div.judul-meja a.toggle-info span.right {
+    left: 10px;
+}
+
+div.meja.tampil div.meja-animasi {
+    background: #5c2929;
+    transform: rotateX(0deg);
+}
+
+div.meja.tampil div.animasi1 {
+    transition: all 0.3s 0s ease-out;
+}
+
+div.meja.tampil div.animasi2 {
+    transition: all 0.3s 0.2s ease-out;
+}
+
+
+/* ==================== akhir dari card dari meja ========================= */

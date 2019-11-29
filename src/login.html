@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shorcut icon" type="image/png" href="../asset/gambar/logouma.png">
+    <link rel="stylesheet" href="../asset/css/login.css">
+    <link rel="stylesheet" href="../asset/fontawesome/css/all.css">
+    <script src="../asset/js/jquery.min.js"></script>
+    <script src="../asset/js/ketikauto.js"></script>
+</head>
+
+<body>
+
+    <!-- loader animasi loader-masak -->
+    <div class="loader-masak">
+        <h1 class="loader-masak">Cafetarian UMA</h1>
+        <div id="cooking">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div id="area">
+                <div id="sides">
+                    <div id="pan"></div>
+                    <div id="handle"></div>
+                </div>
+                <div id="pancake">
+                    <div id="pastry"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Loading animasi loader-masak  -->
+
+    <div class="container">
+        <a href="index.html"><i class="fas fa-caret-square-left fa-3x"></i></a><span class="back">Kembali</span>
+    </div>
+    <div class="masuk">
+        <img src="../asset/gambar/admin.png" alt="User" class="user">
+        <h2>hallo <span class="type"></span></h2>
+        <form action="">
+            <i class="fa fa-user icon fa-lg"></i>
+            <label for="username">Username Anda</label>
+            <input type="text" id="username" placeholder="Masukan Usernamemu?">
+            <i class="fa fa-key icon fa-lg"></i>
+            <label for="password">Password Anda</label>
+            <input type="password" id="password" placeholder="Masukan Password?">
+            <button onclick="sweetalertclick()" type="button">Login</button>
+        </form>
+    </div>
+
+    <script src="../asset/js/login.js"></script>
+    <script src="../asset/js/jquery.ripples.min.js"></script>
+    <script src="../asset/js/sweetalert.js"></script>
+    <script>
+        // alert menggunakan sweet alert 
+        function sweetalertclick() {
+
+            Swal.fire('Any fool can use a computer')
+
+            // // cek apakah alert berjalan
+            // const username = 'reyriyansanjaya';
+            // const password = 'simpledark67';
+
+            // const username = document.getElementById('#username').values;
+            // const password = document.getElementById('#password').values;
+
+            // if(username == username) && (password == password) {
+            //     Try me! 
+            // Swal.fire('Any fool can use a computer')
+            // };
+            // };
+    </script>
+</body>
+
+</html>

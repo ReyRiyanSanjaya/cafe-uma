@@ -1,0 +1,500 @@
+/* Google Font */
+
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+/* Google Font */
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header.section {
+    overflow-x: hidden;
+}
+
+:root {
+    --Single-font: "Sniglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "Lobster", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+    --light-gray: rgba(255, 255, 255, 0);
+    --
+}
+
+header a {
+    font-family: var(--Single-font);
+    font-size: 6rem;
+    color: rgba(92, 244, 255, 0.5);
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
+    transition: 0.7s;
+    font-weight: bold;
+}
+
+header a:hover {
+    font-family: var(--Lobster);
+    color: tomato;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    -webkit-animation: gambar 16s infinite;
+    box-shadow: 1px 2px 50px 0px rgba(0, 0, 0, 0.85);
+    background-attachment: fixed;
+    display: table;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom: -20%;
+}
+
+@-webkit-keyframes gambar {
+    0% {
+        background-image: url(../gambar/kantin1.jpeg);
+    }
+    25% {
+        background-image: url(../gambar/kantin1.jpeg);
+    }
+    25.01% {
+        background-image: url(../gambar/kantin2.jpeg);
+    }
+    50% {
+        background-image: url(../gambar/kantin2.jpeg);
+    }
+    50.01% {
+        background-image: url(../gambar/kantin3.jpeg);
+    }
+    75% {
+        background-image: url(../gambar/kantin3.jpeg);
+    }
+    75.01% {
+        background-image: url(../gambar/kantin4.jpeg);
+    }
+    100% {
+        background-image: url(../gambar/kantin4.jpeg);
+    }
+}
+
+header.nav-item:last-child {
+    padding-right: 10.5em !important;
+}
+
+header.nav-item {
+    padding: 0.9em !important;
+    margin: 5%;
+}
+
+a.navbar-brand.ml-2 {
+    font-weight: bold lighter;
+    font-size: 2rem;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+div.container.text-center {
+    color: whitesmoke;
+    width: 80%;
+    height: 70%;
+    font-family: var(--Rubik);
+    border-radius: 30%;
+    background-color: rgb(87, 104, 104, 0.5);
+}
+
+i.fas.fa-chevron-circle-down {
+    color: rgba(92, 244, 255, 0.5);
+    cursor: pointer;
+    transition: 0.4s;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ======= ini buat icon-icon font awesome===== */
+
+i.fas.fa-coffee.fa-3x.mr-0 {
+    color: rgba(92, 244, 255, 0.5);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+i.fas.fa-chevron-circle-down:hover {
+    transform: rotate(50deg);
+}
+
+
+/* ======= ini buat icon-icon font awesome===== */
+
+div.container.text-center h1 {
+    font-size: 4rem;
+}
+
+.nav-link {
+    font-family: var(--Lobster);
+    font-size: 4vmin;
+    color: rgba(92, 244, 255, 0.5);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.7s;
+    border: 3px solid;
+    border-color: transparent;
+}
+
+.nav-link:hover {
+    transform: scale(1.5);
+    border-bottom-color: rgba(128, 192, 219, 0.7);
+    color: rgb(183, 200, 252, 0.7);
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    height: 84%;
+}
+
+
+/* logo uma */
+
+div.col-md-5.col-sm-12.h-25.mt-5.mb-5 {
+    height: 250%;
+}
+
+div.col-md-5.col-sm-12.h-150>img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+/* logo uma */
+
+
+/* section 2 */
+
+div.cards {
+    animation-delay: 0.2s;
+    transition: 0.2s;
+    visibility: visible;
+}
+
+.cover {
+    width: 100%;
+    height: 55vmin;
+    background: url(../gambar/kantin1.jpeg);
+    background-position: -24em --19em;
+    background-size: 150%;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.cover .content {
+    background: rgb(0, 0, 0, 0.75);
+    height: 100%;
+    width: 100%;
+    padding-top: 19vmin;
+}
+
+.cover .content>h1 {
+    font-family: var(--Patua);
+    font-size: 10vmin;
+    color: whitesmoke;
+}
+
+.cover .content>p {
+    font-family: var(--Rubik);
+    font-size: 2vmin;
+    color: cyan;
+    margin: 0;
+}
+
+.numbers .rect {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to bottom, #ffffff 0%, #669999 100%);
+    width: 17em;
+    height: 12em;
+    padding-top: 3.5vmin;
+    margin: 1em;
+    border-radius: 5em;
+    box-shadow: 1px 2px 50px 0px rgba(102, 98, 98, 0.349);
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+.numbers .rect:hover {
+    transform: scale(1.1);
+}
+
+.numbers {
+    margin-top: -10vmin;
+}
+
+.numbers .rect h1 {
+    font-size: 3em;
+    color: tomato;
+}
+
+.numbers .rect p {
+    font-family: var(--Patua);
+}
+
+.purchase>h1 {
+    padding-top: 15vmin;
+    padding-bottom: 0.1em;
+    font-family: var(--Lobster);
+}
+
+.purchase>p {
+    color: var(--light-black);
+    font-size: 3vmin;
+    padding-bottom: 10vmin;
+}
+
+.purchase .cards .card {
+    width: 22rem;
+    margin: 3vmin;
+}
+
+.cards div {
+    padding: 0;
+    margin: 0%;
+    transition: 0.8s;
+}
+
+.purchase .cards .card {
+    height: 50%;
+    border-color: transparent;
+}
+
+.card>img {
+    height: 124px;
+    width: 20px;
+    box-shadow: 1px 2px 50px 0px rgba(0, 0, 0, 0.50);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.cards .title {
+    padding: 1.4rem 2.5rem;
+    font-size: 2vmin;
+    font-family: var(--Rubik);
+}
+
+.card-body .pricing {
+    background: linear-gradient(to bottom, #ffffff 0%, #669999 100%);
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-body .pricing:hover {
+    border-radius: 50%;
+}
+
+a.btn.btn-danger.px-5.py-2.mb-2 {
+    font-family: var(--Rubik);
+    box-shadow: 1px 2px 50px 0px rgba(0, 0, 0, 0.85);
+    transition: all 0.8s;
+}
+
+a.btn.btn-danger.px-5.py-2.mb-2:hover {
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+
+
+/* section ketiga  */
+
+.section-3 {
+    height: 70vmin;
+    margin-top: 15vmin;
+    background: var(--bggradient);
+}
+
+.section-3 .col-md-12>h1 {
+    padding: 2em 0 0.5em 0;
+    color: whitesmoke;
+    font: size 6vmin;
+}
+
+.section-3 .col-md-12>p {
+    padding: 0.4em;
+    padding-bottom: 0.4em;
+    color: var(--light-gray);
+    font-size: 3vmin;
+}
+
+.section-3 .dekstop {
+    background: whitesmoke;
+    display: inline block;
+    border-radius: 3em;
+    padding: 2vmin 4.5vmin;
+    margin: 1em;
+}
+
+.section-3 .dekstop h3 {
+    font-size: 4em;
+}
+
+.section-3 .dekstop p {
+    font-size: 2vmin;
+}
+
+
+/* section 4 */
+
+
+/* awal dari swiper */
+
+
+/* footer */
+
+footer {
+    background: transparent;
+    overflow-x: hidden;
+    padding: 0;
+    position: cover;
+}
+
+
+/* Stikyi Class */
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom-color: 2px #2b2b2b;
+    z-index: 9999;
+    transition: all 1.5s ease;
+    box-shadow: 1px 2px 50px 0px rgba(0, 0, 0, 0.85);
+}
+
+
+/* waves  */
+
+.waves {
+    position: relative;
+    background-attachment: fixed;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 200px;
+    max-height: 250px;
+    box-shadow: 1px 2px 50px 0px rgba(0, 0, 0, 0.85);
+}
+
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+
+/*Shrinking for mobile*/
+
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+    .content {
+        height: 30vh;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+
+
+/* end dari waves  */
+
+
+/* awal dari swiper */
+
+.swiper-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background: rgba(119, 119, 119, 0.85);
+    border-radius: 50%;
+    box-shadow: 1px 2px 50px 0px rgba(0, 0, 0, 0.85);
+}
+
+.swiper-slide .imgBx img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.swiper-slide .details h3 {
+    margin-top: 20px;
+    font-family: var(--Rubik);
+    font-weight: bold;
+    padding: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+section>h1 {
+    font-family: var(--Lobster);
+    font-size: 50vmin;
+}
+
+h1.text-dark {
+    padding: 5vmin;
+    font-family: var(--Lobster);
+    font-size: 3rem;
+    margin-top: 40px;
+    margin-bottom: -40px;
+}
+
+
+/* akhir dari section terakhir */
+
+
+/* ====================================================================================== */

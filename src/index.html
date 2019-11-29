@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shorcut icon" type="image/png" href="../asset/gambar/logouma.png">
+    <link rel="stylesheet" href="../asset/css/swiper.min.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/bs.css">
+    <link rel="stylesheet" href="../asset/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../asset/css/mobile.css">
+    <link rel="stylesheet" href="../asset/css/loader.css">
+    <script src="../asset/js/jquery.min.js"></script>
+    <script src="../asset/js/main.js"></script>
+    <script src="../asset/js/ketikauto.js"></script>
+    <script src="../asset/js/jquery.ripples.min.js"></script>
+</head>
+
+<body>
+
+    <header id="Home">
+        <!-- loader animasi loader-masak -->
+        <div class="loader-masak">
+            <h1 class="loader-masak">Cafetarian UMA</h1>
+            <div id="cooking">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div id="area">
+                    <div id="sides">
+                        <div id="pan"></div>
+                        <div id="handle"></div>
+                    </div>
+                    <div id="pancake">
+                        <div id="pastry"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Loading animasi loader-masak  -->
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg">
+                <i class="fas fa-coffee fa-3x mr-0"></i><a class="navbar-brand ml-2" href="#Home">Cafetarian UMA</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#menumobile">
+                    <span class="navbar-toggler-icon"><i class="fas fa-chevron-circle-down fa-2x"></i></span>
+                </button>
+                <!-- menu yang telah dibuat -->
+                <div class="collapse navbar-collapse" id="menumobile">
+                    <div class="ml-auto">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active mr-5">
+                                <a class="nav-link" href="#"><span>Home</span></a>
+                            </li>
+                            <li class="nav-item mr-5">
+                                <a class="nav-link" href="#meja"><span>Meja</span></a>
+                            </li>
+                            <li class="nav-item mr-5">
+                                <a class="nav-link" href="#menu"><span>Menu</span></a>
+                            </li>
+                            <li class="nav-item mr-5">
+                                <a class="nav-link" href="login.html"><span>Login</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- contain yang ada di header -->
+        <div class="container text-center">
+            <div class="row mt-5 p-2">
+                <div class="col mt-5">
+                    <H1>CAFETARIAN UMA</H1>
+                    <h3>
+                        Sekarang lebih mudah <span class="type"></span>
+                    </h3>
+                    <button onclick="pesan()" class="btn btn-danger px-5 py-2 mt-3 mb-5 mt-5">Pesan Makan</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- akhir dari konten header -->
+    </header>
+
+    <main>
+
+        <section class="section-1 m-0">
+            <!-- Swiper -->
+            <h1 class="display-4 mt-5 mb-5 text-center">Gambar Menu</h1>
+            <div class="swiper-container mb-5 ml-0 mr-0">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="imgBx">
+                            <img src="../asset/gambar/bakso.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h3>Bakso Mantap Kali</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBx">
+                            <img src="../asset/gambar/ayampenyet.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h3>Ayam Penyet</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBx">
+                            <img src="../asset/gambar/nasigoreng.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h3>Nasi Goreng</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBx">
+                            <img src="../asset/gambar/ifumie.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h3>Ifu Mie</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgBx">
+                            <img src="../asset/gambar/mieayam.JPG" alt="">
+                        </div>
+                        <div class="details">
+                            <h3>Mie Ayam</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="section-2" id="meja">
+            <div class="cover">
+                <div class="content text-center">
+                    <h1>Cafetarian UMA</h1>
+                    <p>
+                        Disini anda bisa melihat meja yang sudah terisi,belum terisi
+                    </p>
+                    <p>
+                        Dan berapa jumlah kapasitas yang terdapat pada meja
+                    </p>
+                    <p>
+                        Anda bisa mengeceknya lewab webiste ini tanpa perlu datang ke Cafetarian UMA
+                    </p>
+                </div>
+            </div>
+            <div class="container-fluid text-center">
+                <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
+                    <div class="rect">
+                        <h1>Meja 1</h1>
+                        <p>
+                            kapasitas 8 Orang
+                        </p>
+                    </div>
+                    <div class="rect">
+                        <h1>Meja 2</h1>
+                        <p>
+                            kapasitas 10 orang
+                        </p>
+                    </div>
+                    <div class="rect">
+                        <h1>Meja 3</h1>
+                        <p>
+                            kapasitas 10 Orang
+                        </p>
+                    </div>
+                    <div class="rect">
+                        <h1>Meja 4</h1>
+                        <p>
+                            kapasitas 4 orang
+                        </p>
+                    </div>
+                    <div class="rect">
+                        <h1>Meja 5</h1>
+                        <p>
+                            kapasistas 6 orang
+                        </p>
+                    </div>
+                    <div class="rect">
+                        <h1>MEJA 6 </h1>
+                        <p>
+                            kapasistas 4 orang
+                        </p>
+                    </div>
+                    <div class="rect">
+                        <h1>Meja 7</h1>
+                        <p>
+                            kapasitas 10 orang
+                        </p>
+                    </div>
+                    <div class="rect">
+                        <h1>Meja 8</h1>
+                        <p>
+                            kapasistas 8 Orang
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="purchase text-center" id="menu">
+                <h1>Daftar Menu Cafetarian UMA</h1>
+                <p>
+                    Cafetarian UMA mempunyai beraneka ragam makanan yang disajikan untuk anda. Lewat webiste ini dapat memudahkan pemesanan dan pengecekan lokasi agar proses pemesanan bisa seefisien mungkin.
+                </p>
+                <div class="cards">
+                    <div class="d-flex flex-row justify-content-center flex-wrap">
+                        <!--card pertama-->
+                        <div class="card">
+                            <img src="../asset/gambar/nasigoreng.jpg" class="card-img-top w-50 h-60 mx-auto" alt="Ayam Penyet">
+                            <div class="card-body">
+                                <div class="title">
+                                    <h5 class="card-title">Ayam Penyet</h5>
+                                </div>
+                                <div class="pricing">
+                                    <h1>RP.15.000</h1>
+                                    <a onclick="pesan()" href="#" class="btn btn-danger px-5 py-2 mb-2">Beli Sekarang</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--card kedua-->
+                        <div class="card">
+                            <img src="../asset/gambar/ayampenyet.jpg" class="card-img-top w-50 h-50 mx-auto" alt="Ayam Penyet">
+                            <div class="card-body">
+                                <div class="title">
+                                    <h5 class="card-title">Ayam Penyet</h5>
+                                </div>
+                                <div class="pricing">
+                                    <h1>RP.15.000</h1>
+                                    <a onclick="pesan()" href="#" class="btn btn-danger px-5 py-2 mb-2">Beli Sekarang</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--card ketiga-->
+                        <div class="card">
+                            <img src="../asset/gambar/indomikuah.jpg" class="card-img-top w-50 h-50 mx-auto" alt="Ayam Penyet">
+                            <div class="card-body">
+                                <div class="title">
+                                    <h5 class="card-title">Ayam Penyet</h5>
+                                </div>
+                                <div class="pricing">
+                                    <h1>RP.15.000</h1>
+                                    <a onclick="pesan()" href="#" class="btn btn-danger px-5 py-2 mb-2">Beli Sekarang</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--akhir dari card-->
+                        <!--card keempat-->
+                        <div class="card">
+                            <img src="../asset/gambar/mieayam.JPG" class="card-img-top w-50 h-50 mx-auto mt-4" alt="Ayam Penyet">
+                            <div class="card-body">
+                                <div class="title">
+                                    <h5 class="card-title">Mie Ayam</h5>
+                                </div>
+                                <div class="pricing">
+                                    <h1>RP.10.000</h1>
+                                    <a onclick="pesan()" href="#" class="btn btn-danger px-5 py-2 mb-2">Beli Sekarang</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--akhir dari card-->
+                        <!--card kelima-->
+                        <div class="card">
+                            <img src="../asset/gambar/ifumie.jpg" class="card-img-top w-50 h-50 mx-auto mt-4" alt="Ayam Penyet">
+                            <div class="card-body">
+                                <div class="title">
+                                    <h5 class="card-title">Ifu Mie Kuah</h5>
+                                </div>
+                                <div class="pricing">
+                                    <h1>RP.12.000</h1>
+                                    <a onclick="pesan()" href="#" class="btn btn-danger px-5 py-2 mb-2">Beli Sekarang</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--akhir dari card-->
+                        <!--card keenam-->
+                        <div class="card">
+                            <img src="../asset/gambar/bakso.jpg" class="card-img-top w-50 h-50 mx-auto mt-4" alt="Ayam Penyet">
+                            <div class="card-body">
+                                <div class="title">
+                                    <h5 class="card-title">Bakso Kuah Enak Kali</h5>
+                                </div>
+                                <div class="pricing">
+                                    <h1>RP.10.000</h1>
+                                    <a onclick="pesan()" href="#" class="btn btn-danger px-5 py-2 mb-2">Beli Sekarang</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--akhir dari card-->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-4 m-0">
+            <!-- Sfooter text-->
+            <h1 class="display-4 mt-5 mb-0 text-center">CAFETARIAN UMA</h1>
+        </section </main>
+        <footer>
+            <!--Waves Container-->
+            <div>
+                <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(130,165,175,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(160,190,185,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(185, 205, 200,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(235, 225, 215,0.1)" />
+                </g>
+            </svg>
+            </div>
+            <!--Waves end-->
+        </footer>
+
+        <!-- swiper js  -->
+        <script src="../asset/js/swiper.min.js"></script>
+        <script src="../asset/bs/js/bootstrap.min.js"></script>
+        <script src="../asset/js/jquery.ripples.min.js"></script>
+        <script src="../asset/js/main.js"></script>
+        <script src="../asset/js/jquery.min.js"></script>
+        <script src="../asset/js/navbarstiky.js"></script>
+        <script src="../asset/js/sweetalert.js"></script>
+
+        <script>
+            function pesan() {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Silahkan login dulu ya',
+                    footer: '<i class="fas fa-smile-wink fa-3x"></i>'
+                })
+            }
+        </script>
+</body>
+
+</html>
