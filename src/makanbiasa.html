@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="shorcut icon" type="image/png" href="../asset/gambar/logouma.png">
+    <title>Pesan Makanan Cafetarian UMA</title>
     <link rel="stylesheet" href="../asset/css/makanbiasa.css">
     <link rel="stylesheet" href="../asset/bs/css/bootstrap.min.css">
     <link rel="stylesheet" href="../asset/fontawesome/css/all.css">
@@ -264,6 +265,20 @@
                 }
             })
         }
+    </script>
+    <script>
+        // title bergerak
+        var txt = "--Cafetarian UMA--";
+        var kecepatan = 200;
+        var segarkan = null;
+
+        function bergerak() {
+            document.title = txt;
+            txt = txt.substring(1, txt.length) + txt.charAt(0);
+            segarkan = setTimeout("bergerak()", kecepatan);
+        }
+        bergerak();
+        // akhir dari title bergerak
     </script>
     <script src="../asset/js/navbarstiky.js"></script>
 </body>

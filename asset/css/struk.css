@@ -1,113 +1,309 @@
-@media screen {
-    img {
-        max-width: 100%;
-    }
-    td,
-    th {
-        box-sizing: border-box;
-    }
-    u~div .wrapper {
-        min-width: 100vw;
-    }
-    a[x-apple-data-detectors] {
-        color: inherit;
-        text-decoration: none;
-    }
-    .all-font-roboto {
-        font-family: Roboto, -apple-system, "Segoe UI", sans-serif !important;
-    }
-    .all-font-sans {
-        font-family: -apple-system, "Segoe UI", sans-serif !important;
-    }
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 1.42857143;
 }
 
-@media (max-width: 600px) {
-    .sm-inline-block {
-        display: inline-block !important;
-    }
-    .sm-hidden {
-        display: none !important;
-    }
-    .sm-leading-32 {
-        line-height: 32px !important;
-    }
-    .sm-p-20 {
-        padding: 20px !important;
-    }
-    .sm-py-12 {
-        padding-top: 12px !important;
-        padding-bottom: 12px !important;
-    }
-    .sm-text-center {
-        text-align: center !important;
-    }
-    .sm-text-xs {
-        font-size: 12px !important;
-    }
-    .sm-text-lg {
-        font-size: 18px !important;
-    }
-    .sm-w-1-4 {
-        width: 25% !important;
-    }
-    .sm-w-3-4 {
-        width: 75% !important;
-    }
-    .sm-w-full {
-        width: 100% !important;
-    }
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
-
-@media (max-width: 600px) {
-    .sm-dui17-b-t {
-        border: solid #4299e1;
-        border-width: 4px 0 0;
-    }
-}
-
-
-/* ======================== akhir dari responsive struk ================================ */
 
 body {
-    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #ebebeb;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #333333;
+    padding: 0;
+}
+
+
+/* selector yang penting pada page diatas */
+
+header.section {
+    overflow-x: hidden;
+}
+
+:root {
+    --Single-font: "Sniglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "Lobster", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+    --light-gray: rgba(255, 255, 255, 0);
+    --
+}
+
+header a {
+    font-family: var(--Single-font);
+    font-size: 6rem;
+    color: rgba(92, 244, 255, 0.5);
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
+    transition: 0.7s;
+    font-weight: bold;
+}
+
+header a:hover {
+    font-family: var(--Lobster);
+    color: tomato;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    -webkit-animation: gambar 16s infinite;
+    box-shadow: 1px 2px 50px 0px rgba(0, 0, 0, 0.85);
+    background-attachment: fixed;
+    display: table;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom: -20%;
+}
+
+@-webkit-keyframes gambar {
+    0% {
+        background-image: url(../gambar/kantin1.jpeg);
+    }
+    25% {
+        background-image: url(../gambar/kantin1.jpeg);
+    }
+    25.01% {
+        background-image: url(../gambar/kantin2.jpeg);
+    }
+    50% {
+        background-image: url(../gambar/kantin2.jpeg);
+    }
+    50.01% {
+        background-image: url(../gambar/kantin3.jpeg);
+    }
+    75% {
+        background-image: url(../gambar/kantin3.jpeg);
+    }
+    75.01% {
+        background-image: url(../gambar/kantin4.jpeg);
+    }
+    100% {
+        background-image: url(../gambar/kantin4.jpeg);
+    }
+}
+
+header.nav-item:last-child {
+    padding-right: 10.5em !important;
+}
+
+header.nav-item {
+    padding: 0.9em !important;
+    margin: 5%;
+}
+
+a.navbar-brand.ml-2 {
+    font-weight: bold lighter;
+    font-size: 2rem;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+div.container.text-center {
+    color: whitesmoke;
+    width: 80%;
+    height: 70%;
+    font-family: var(--Rubik);
+    border-radius: 30%;
+    background-color: rgb(87, 104, 104, 0.5);
+}
+
+i.fas.fa-chevron-circle-down {
+    color: rgba(92, 244, 255, 0.5);
+    cursor: pointer;
+    transition: 0.4s;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ======= ini buat icon-icon font awesome===== */
+
+i.fas.fa-coffee.fa-3x.mr-0 {
+    color: rgba(92, 244, 255, 0.5);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+i.fas.fa-chevron-circle-down:hover {
+    transform: rotate(50deg);
+}
+
+
+/* ======= ini buat icon-icon font awesome===== */
+
+div.container.text-center h1 {
+    font-size: 4rem;
+}
+
+.nav-link {
+    font-family: var(--Lobster);
+    font-size: 4vmin;
+    color: rgba(92, 244, 255, 0.5);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.7s;
+    border: 3px solid;
+    border-color: transparent;
+}
+
+.nav-link:hover {
+    transform: scale(1.5);
+    border-bottom-color: rgba(128, 192, 219, 0.7);
+    color: rgb(183, 200, 252, 0.7);
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    height: 84%;
+}
+
+
+/* akhir dari navbar animasi yang telah dibuat */
+
+h1#struk-h1 {
+    font-family: 'Crete Round', serif;
     margin: 0;
-    padding: 0;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 200;
+}
+
+h1#struk-h1 img {
+    float: right;
+    vertical-align: top;
+}
+
+@media (max-width: 630px) {
+    h1#struk-h1 img {
+        width: 40px;
+    }
+}
+
+p.sub-head {
+    margin: 0.6rem 0;
+    color: #999999;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+main {
+    margin: auto;
+}
+
+.description {
+    width: 74%;
+}
+
+@media (max-width: 485px) {
+    .description {
+        width: 100%;
+    }
+}
+
+.receipt {
     width: 100%;
-    word-break: break-word;
-    -webkit-font-smoothing: antialiased;
-    background-color: #f5dbce;
+    padding: 4rem;
+    min-height: 200px;
+    background: #FFF;
+    border-top: 5px solid #006341;
+    position: relative;
 }
 
-div.container-struk {
-    display: none;
-    line-height: 0;
-    font-size: 0;
-}
-
-div.wrapper.all-font-sans {
+.receipt:after {
+    background: linear-gradient(-45deg, transparent 8px, #FFF 0), linear-gradient(45deg, transparent 8px, #FFF 0);
+    background-position: left bottom;
+    background-size: 8px 32px;
+    content: "";
     width: 100%;
-    height: 100%;
-    padding: 0;
-    letter-spacing: 0;
+    height: 8px;
+    position: absolute;
+    bottom: -8px;
+    left: 0px;
 }
 
-td.tabel-data {
-    padding: 24px;
+@media (min-width: 630px) {
+    .receipt {
+        margin: auto;
+        width: 600px;
+        padding: 5rem;
+    }
+}
+
+footer {
+    margin: 4rem 0;
+    text-align: center;
+    color: #aaaaaa;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+address {
+    font-weight: 400;
+    font-style: normal;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
     width: 100%;
-    align-content: center;
+    margin-top: 3rem;
 }
 
-.sm-w-full {
-    width: 600px;
-    padding: 0%;
-    letter-spacing: 0ch;
+table td {
+    font-size: 1.4rem;
+    font-weight: 400;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+    padding: 2rem 0;
 }
 
-img {
-    border: 0;
-    line-height: 100%;
-    vertical-align: middle;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+.table__img {
+    width: 20%;
 }
+
+.table__desc {
+    width: 65%;
+    padding: 2rem 2rem;
+}
+
+.table__price {
+    width: 15%;
+    text-align: right;
+}
+
+.table__total {
+    text-align: right;
+    border-width: 3px;
+    border-color: #444;
+}
+
+.u-shadow {
+    box-shadow: 1px 1px 2px #DDD;
+}
+
+
+/* akhir dari struk css */
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom-color: 2px #2b2b2b;
+    z-index: 9999;
+    transition: all 1.5s ease;
+    box-shadow: 1px 2px 50px 0px rgba(0, 0, 0, 0.85);
+}
+
+
+/* pembuatan navbar dari js secara otomatis  */
