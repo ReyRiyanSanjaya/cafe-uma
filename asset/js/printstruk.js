@@ -11,3 +11,16 @@ function Printstruk() {
     popupWin.document.close();
 }
 // untuk print struk
+
+// title bergerak
+var txt = "--Cafetarian UMA--";
+var kecepatan = 200;
+var segarkan = null;
+
+function bergerak() {
+    document.title = txt;
+    txt = txt.substring(1, txt.length) + txt.charAt(0);
+    segarkan = setTimeout("bergerak()", kecepatan);
+}
+bergerak();
+// akhir dari title bergerak
