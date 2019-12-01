@@ -180,7 +180,7 @@ a.btn:active {
 }
 
 div.mejas {
-    margin: 5% 0% 2% 0%;
+    margin: -5% 0% 10% 0%;
     max-width: 100%;
     text-align: center;
     border-radius: 32%;
@@ -191,7 +191,7 @@ div.meja {
     display: inline-block;
     margin: 8px;
     margin: 1%;
-    max-width: 260px;
+    max-width: 250px;
     perspective: 1000;
     position: relative;
     text-align: left;
@@ -208,7 +208,7 @@ div.meja:hover {
 }
 
 div.meja img {
-    max-width: 260px;
+    max-width: 250px;
     border-radius: 50%;
 }
 
