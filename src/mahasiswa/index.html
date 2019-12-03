@@ -74,32 +74,51 @@
                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                                 <div class="container">
                                     <div class="row">
-                                        <table class="table table-hover">
+                                        <table class="table table-hover mt-5">
                                             <thead>
                                                 <tr>
-                                                    <th scope="col">Pembelian</th>
-                                                    <th scope="col">First</th>
-                                                    <th scope="col">Last</th>
-                                                    <th scope="col">Handle</th>
+                                                    <th>
+                                                        <h3>Pembelian</h3>
+                                                    </th>
+                                                    <th>
+                                                        <h3>Harga</h3>
+                                                    </th>
+                                                    <th>
+                                                        <h3>Kuantiti</h3>
+                                                    </th>
+                                                    <th>
+                                                        <h3>Total</h3>
+                                                    </th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th scope="row">Harga</th>
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
+                                                    <td><span><img class="gambar-beli" src="../../asset/gambar/bakso.jpg" alt=""></span>Ayam</td>
+                                                    <!-- baranag yang mau dipesan -->
+                                                    <td id="td" class="mt-5">RP.100</td>
+                                                    <!-- harga per item makanan  -->
+                                                    <td id="td">1</td>
+                                                    <!-- jumplah pembelian  -->
+                                                    <td id="td">200000000000</td>
+                                                    <!-- total pembayaran  -->
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">Quantity</th>
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
+                                                    <td><span><img class="gambar-beli" src="../../asset/gambar/bakso.jpg" alt=""></span>Ayam</td>
+                                                    <!-- baranag yang mau dipesan -->
+                                                    <td id="td" class="mt-5">RP.100</td>
+                                                    <!-- harga per item makanan  -->
+                                                    <td id="td">1</td>
+                                                    <!-- jumplah pembelian  -->
+                                                    <td id="td">200</td>
+                                                    <!-- total pembayaran  -->
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">Total</th>
-                                                    <td colspan="2">Larry the Bird</td>
-                                                    <td>@twitter</td>
+                                                    <td id="pembayaran">
+                                                        <h3>Total pembayaran</h3>
+                                                    </td>
+                                                    <td id="pembayaran"></td>
+                                                    <td id="pembayaran"></td>
+                                                    <td id="pembayaran">Rp.10.jt</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -137,132 +156,312 @@
             <div class="row">
                 <div class="col-md-3 mt-5">
                     <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a onclick="pesan()" href="#" class="btn btn-primary">Pesan</a>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <a onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3 mt-5">
                     <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a onclick="pesan()" href="#" class="btn btn-primary">Pesan</a>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <a onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3 mt-5">
                     <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a onclick="pesan()" href="#" class="btn btn-primary">Pesan</a>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <a onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3 mt-5">
                     <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a onclick="pesan()" href="#" class="btn btn-primary">Pesan</a>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <a onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3 mt-5">
                     <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a onclick="pesan()" href="#" class="btn btn-primary">Pesan</a>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <a onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3 mt-5">
                     <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a onclick="pesan()" href="#" class="btn btn-primary">Pesan</a>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <a onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3 mt-5">
                     <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a onclick="pesan()" href="#" class="btn btn-primary">Pesan</a>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <a onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3 mt-5">
                     <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a onclick="pesan()" href="#" class="btn btn-primary">Pesan</a>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <a onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3 mt-5">
                     <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a onclick="pesan()" href="#" class="btn btn-primary">Pesan</a>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <a onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3 mt-5">
                     <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a onclick="pesan()" href="#" class="btn btn-primary">Pesan</a>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <a onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3 mt-5">
                     <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a onclick="pesan()" href="#" class="btn btn-primary">Pesan</a>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <a onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3 mt-5">
                     <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a onclick="pesan()" href="#" class="btn btn-primary">Pesan</a>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <a onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</a>
                         </div>
                     </div>
                 </div>
