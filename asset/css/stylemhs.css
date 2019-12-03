@@ -1,5 +1,6 @@
 body {
     background-color: rgba(190, 204, 207, 0.5);
+    transition: all 1s ease-out;
 }
 
 .daftar-menu>h1 {
