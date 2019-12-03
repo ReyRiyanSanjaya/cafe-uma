@@ -5,3 +5,4 @@ $(window).on('scroll', function() {
         $('nav').removeClass('sticky');
     }
 });
+// akhir dari nab sticky
