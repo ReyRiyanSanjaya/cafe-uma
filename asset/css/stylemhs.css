@@ -129,9 +129,15 @@ div.input-group {
     box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.85);
 }
 
-a.btn.btn-primary {
+button.btn.btn-primary {
     box-shadow: 1px 2px 20px 0px rgba(0, 0, 0, 0.85);
     border-radius: 30%;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+button.btn.btn-primary:hover {
+    background-color: royalblue;
 }
 
 h5.card-title {

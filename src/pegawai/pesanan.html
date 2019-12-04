@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shorcut icon" type="image/png" href="../../asset/gambar/logouma.png">
+    <title>Struk Cafetarian UMA</title>
+    <link rel="stylesheet" href="../../asset/css/pesanan.css">
+    <link rel="stylesheet" href="../../asset/css/loader.css">
+    <link rel="stylesheet" href="../../asset/bs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asset/fontawesome/css/all.css">
+    <script src="../../asset/js/jquery2-1.min.js"></script>
+</head>
+
+<body>
+
+    <section id="1">
+        <header id="Home">
+            <!-- loader animasi loader-masak -->
+            <div class="loader-masak">
+                <h1 class="loader-masak">Cafetarian UMA</h1>
+                <div id="cooking">
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div id="area">
+                        <div id="sides">
+                            <div id="pan"></div>
+                            <div id="handle"></div>
+                        </div>
+                        <div id="pancake">
+                            <div id="pastry"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Loading animasi loader-masak  -->
+            <div class="container-fluid p-0">
+                <nav class="navbar navbar-expand-lg">
+                    <i class="fas fa-coffee fa-3x mr-0"></i><a class="navbar-brand ml-2" href="#Home">Cafetarian UMA</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#menumobile">
+                                    <span class="navbar-toggler-icon"><i class="fas fa-chevron-circle-down fa-2x"></i></span>
+                                </button>
+                    <!-- menu yang telah dibuat -->
+                    <div class="collapse navbar-collapse" id="menumobile">
+                        <div class="ml-auto">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active mr-5">
+                                    <a class="nav-link" href="#"><span>Home</span></a>
+                                </li>
+                                <li class="nav-item mr-5">
+                                    <a class="nav-link" href="#meja"><span>Meja</span></a>
+                                </li>
+                                <li class="nav-item mr-5">
+                                    <a class="nav-link" href="#menu"><span>Menu</span></a>
+                                </li>
+                                <li class="nav-item mr-5">
+                                    <a class="nav-link" href="login.html"><span>Login</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- contain yang ada di header -->
+            <div class="container text-center">
+                <div class="row mt-5 p-2">
+                    <div class="col mt-5">
+                        <H1>CAFETARIAN UMA</H1>
+                        <h3>
+                            Sekarang lebih mudah <span class="type"></span>
+                        </h3>
+                        <button onclick="pesan()" class="btn btn-danger px-5 py-2 mt-3 mb-5 mt-5">Pesan Makan</button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- akhir dari konten header -->
+        </header>
+        <!-- akhir dari header  -->
+        <main>
+            <div class="receipt mt-5">
+                <div id="struk">
+                    <h1 id="struk-h1">
+                        <img src="../../asset/gambar/uma.png" alt="UMA" /> Terimakasih.
+                    </h1>
+                    <p class="sub-head">Pesananmu saat ini sedang diproses.</p>
+                </div>
+                <div class="description">
+                    <p>Mohon untuk menunggu pesananmu akan segera diantarkan ke meja kamu.</p>
+                    <p>Nomor Order: <strong>ni no order coy</strong></p>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="table__img">
+                                <img src="../../asset/gambar/ayampenyet.jpg" alt="GC - 1" class="u-shadow" width="100%">
+                            </td>
+                            <td class="table__desc">
+                                <strong>Rp. 50.000</strong><br> Ayam Penyet terbaik dan terenak
+                            </td>
+                            <td class="table__price">
+                                Rp. 50.000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table__img">
+                                <img src="../../asset/gambar/bakso.jpg" alt="GC - 2" class="u-shadow" width="100%">
+                            </td>
+                            <td class="table__desc">
+                                <strong>Rp. 50.000</strong><br> Bakso terlejat yang pernah kamu makan
+                            </td>
+                            <td class="table__price">
+                                Rp. 50.000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="table__total">
+                                <strong>Total: Rp.100.000</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <section id="keterangan">
+                <p><em>&copy; 2019 Cafetarian UMA. Dibuat Oleh <strong>TIM KECE YUHU.</strong></em></p>
+                <p>Kritik dan saran anda bisa melalui email dibawah ini <em>reyriyansanjaya@gmail.com</em></p>
+                <address>
+                        <strong>Cafetarian UMA</strong><br>
+                        Kampus 1 Sumatera Utara<br>
+                        Medan, WA 082186958535<br>
+                    </address>
+            </section>
+        </main>
+    </section>
+
+    <section class="section-4 mt-5">
+        <!-- Sfooter text-->
+        <h1 class="display-4 mt-5 mb-0 text-center">CAFETARIAN UMA</h1>
+    </section>
+
+    <footer>
+        <!--Waves Container-->
+        <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                        <defs>
+                            <path id="gentle-wave"
+                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(130,165,175,0.7)" />
+                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(160,190,185,0.5)" />
+                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(185, 205, 200,0.3)" />
+                            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(235, 225, 215,0.1)" />
+                        </g>
+                    </svg>
+        <!--Waves end-->
+    </footer>
+    <!-- akhir dari footer  -->
+    <script>
+        // preloader masak 
+        window.addEventListener('load', () => {
+            const preloader = document.querySelector('.loader-masak');
+            preloader.classList.add('preloader-selesai');
+        });
+        // preloader masak
+    </script>
+    <script>
+        // title bergerak
+        var txt = "--Cafetarian UMA--";
+        var kecepatan = 200;
+        var segarkan = null;
+
+        function bergerak() {
+            document.title = txt;
+            txt = txt.substring(1, txt.length) + txt.charAt(0);
+            segarkan = setTimeout("bergerak()", kecepatan);
+        }
+        bergerak();
+        // akhir dari title bergerak
+    </script>
+    <script src="../../asset/js/navbarstiky.js"></script>
+</body>
+
+</html>
