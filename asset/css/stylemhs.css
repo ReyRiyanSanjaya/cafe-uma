@@ -145,3 +145,15 @@ h5.card-title {
     color: #3b424b;
     font-weight: bold;
 }
+
+div.memesan {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(12, 27, 30, 0.5);
+    font-family: var(--Lobster);
+}
+
+h1.cafe.mt-5 {
+    padding-top: 50px !important;
+}

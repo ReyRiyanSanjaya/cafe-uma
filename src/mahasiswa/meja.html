@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="../../asset/bs/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../asset/fontawesome/css/all.css">
     <link rel="stylesheet" href="../../asset/css/loader.css">
+    <link rel="stylesheet" href="../../asset/css/meja.css">
     <link rel="stylesheet" href="../../asset/css/stylemhs.css">
     <link rel="stylesheet" href="../../asset/css/keranjang.css">
+    <link rel="stylesheet" href="../../asset/css/style.css">
 </head>
 
 <body id="bodyhtml">
@@ -54,7 +56,7 @@
                     <div class="ml-auto">
                         <ul class="navbar-nav">
                             <li class="nav-item mr-5">
-                                <a class="nav-link" href="#section-1"><span>Makanan</span></a>
+                                <a class="nav-link" href="#section-2"><span>MEJA</span></a>
                             </li>
                             <li class="nav-item mr-5">
                                 <a class="nav-link" href="#section-3"><span>Pesan</span></a>
@@ -148,124 +150,75 @@
     </header>
     <!-- contain yang ada di header -->
 
-    <section id="section-1">
-        <div class="daftar-menu text-center mt-5">
-            <h1>Daftar Menu Cafetarian UMA</h1>
+    <section id="section-2">
+        <div class="daftar-meja text-center mt-5">
+            <h1>Daftar Meeja Cafetarian UMA</h1>
             <p>
                 Cafetarian UMA mempunyai beraneka ragam makanan yang disajikan untuk anda. Lewat webiste ini dapat memudahkan pemesanan dan pengecekan lokasi agar proses pemesanan bisa seefisien mungkin.
             </p>
-            <div class="row">
-                <div class="col-md-3 mt-5">
-                    <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <div class="input-group mb-1">
-                                <div class="input-group-prepend">
-                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
-                                </div>
-                                <select class="custom-select" id="inputGroupSelect01">
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <button onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</button>
-                        </div>
+            <div class="container-fluid text-center">
+                <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
+                    <div class="rect">
+                        <h1>Meja 1</h1>
+                        <p>
+                            kapasitas 8 Orang
+                        </p>
+                        <button onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</button>
+                    </div>
+                    <div class="rect">
+                        <h1>Meja 2</h1>
+                        <p>
+                            kapasitas 10 orang
+                        </p>
+                        <button onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</button>
+                    </div>
+                    <div class="rect">
+                        <h1>Meja 3</h1>
+                        <p>
+                            kapasitas 10 Orang
+                        </p>
+                        <button onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</button>
+                    </div>
+                    <div class="rect">
+                        <h1>Meja 4</h1>
+                        <p>
+                            kapasitas 4 orang
+                        </p>
+                        <button onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</button>
+                    </div>
+                    <div class="rect">
+                        <h1>Meja 5</h1>
+                        <p>
+                            kapasistas 6 orang
+                        </p>
+                        <button onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</button>
+                    </div>
+                    <div class="rect">
+                        <h1>MEJA 6 </h1>
+                        <p>
+                            kapasistas 4 orang
+                        </p>
+                        <button onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</button>
+                    </div>
+                    <div class="rect">
+                        <h1>Meja 7</h1>
+                        <p>
+                            kapasitas 10 orang
+                        </p>
+                        <button onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</button>
+                    </div>
+                    <div class="rect">
+                        <h1>Meja 8</h1>
+                        <p>
+                            kapasistas 8 Orang
+                        </p>
+                        <button onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</button>
                     </div>
                 </div>
-
-                <div class="col-md-3 mt-5">
-                    <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <div class="input-group mb-1">
-                                <div class="input-group-prepend">
-                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
-                                </div>
-                                <select class="custom-select" id="inputGroupSelect01">
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <button onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 mt-5">
-                    <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <div class="input-group mb-1">
-                                <div class="input-group-prepend">
-                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
-                                </div>
-                                <select class="custom-select" id="inputGroupSelect01">
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <button onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 mt-5">
-                    <div class="card" style="width: 15rem;">
-                        <img class="card-img-top" src="../../asset/gambar/bakso.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <div class="input-group mb-1">
-                                <div class="input-group-prepend">
-                                    <label class="input-group-text" for="inputGroupSelect01">Kuantiti</label>
-                                </div>
-                                <select class="custom-select" id="inputGroupSelect01">
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">Catatan</span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Catatan Pesanan Kamu" aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <button onclick="pesan()" href="#" class="btn btn-primary btn-lg">Pesan</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- akhir dari card makanan  -->
-
             </div>
-        </div>
     </section>
-    <!-- akhir dari section 1 -->
 
-    <section class="section-3 mt-5" id="section-3">
+    <section class="section-4 mt-5" id="section-3">
         <div class="memesan">
             <div class="col mb-0">
                 <H1 class="cafe mt-5">CAFETARIAN UMA</H1>
